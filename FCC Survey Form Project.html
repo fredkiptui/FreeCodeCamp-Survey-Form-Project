@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>FCC Survey Form</title>
+    <style>
+        form {
+            background-color: rgb(19, 162, 187);
+            width: 500px;
+            padding: 2% 6%;
+        }
+        
+        label {
+            font-weight: 800;
+            color: rgb(36, 8, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 id="title" class="text-center">SURVEY FORM PROJECT DEVELOPED WITH BOOTSTRAP 5</h1>
+        <p id="description">
+            Survey Form build courtesy of FreeCodeCamp Responsive Web Design Certification
+        </p>
+    </center>
+
+    <center>
+        <form action="" id="survey-form">
+            <div class="mb-3">
+                <label for="name" id="name-label" class="form-label">Enter Your Name Below:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Type Your Name">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" id="email-label" class="form-label">Enter Your Email Below: </label> <br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Type Your Email" required>
+            </div>
+
+
+            <label for="number" id="number-label">Enter Random Number</label> <br>
+            <input type="number" name="number" id="number" min="10" max="99" class="form-control mb-3" placeholder="Phone Number" required>
+
+            <select class="form-select" id="dropdown" aria-label="Default select example">
+                <option selected>Select a value</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="average">Average</option>
+              </select> <br>
+            <p> <b>Age Bracket </b></p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="age-bracket1">18-25</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="age-bracket2">26-38</label>
+            </div><br>
+
+            <p> <b>Gender </b></p>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender" value="Male">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender" value="Male">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+
+            <!-- <label for="fruits" class="form-label">Select Fruit</label>
+            <input class="form-control" list="datalistOptions" id="fruits" placeholder="select a fruit">
+            <datalist id="datalistOptions">
+                <option value="orange">
+                <option value="mango">
+                <option value="lemon">
+                <option value="guava">
+                <option value="pineapple">
+            </datalist> -->
+
+            <div class="mb-3">
+                <label for="comment" class="form-label">Leave a Comment Below</label>
+                <textarea class="form-control" id="comment" rows="5"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="profile" class="form-label">Upload Profile Picture</label>
+                <input class="form-control" type="file" id="profile">
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rem">
+                <label class="form-check-label" for="check">Remember Me</label>
+            </div>
+        </form>
+    </center>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
